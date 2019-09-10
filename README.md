@@ -17,13 +17,13 @@ Executar o script:
 
 `$ sudo ./limpa_cache_swap.sh`
 
-Com isso, caso execute com sucesso, o script irá gravar um arquivo de log em: */var/log/log_script_clear_cash_swap.txt*
+Com o comando acima, caso execute com sucesso, o script irá gravar um arquivo de log na pasta raiz do seu arquivo de script com o nome: *ScriptClean_Cache.log*
 
 A partir disso, com o script funcional, você pode adicionar um cron no crontab para esse script ser executado diariamente no seu servidor ou computador:
 
 `$ sudo vi /etc/crontab`
 
-Adicionar a seguinte linha, com isso o script será iniciado todo dia as 03hrs todos os dias:
+Adicionar a seguinte linha, com isso o script será iniciado todo dia as 03hrs da manhã:
 
 `00 03 * * 0-6 root /etc/limpa_cache_swap.sh`
 
